@@ -1,0 +1,271 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "pma",
+    "dateExported": "2023-04-10T02:51:32.404Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "5acb6fb3-a328-467d-b139-382595a6b3bc",
+            "name": "login",
+            "containerId": "",
+            "created": "2023-04-09T04:56:56.831Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "1a5c073b-7df2-4ddf-868d-f6597f727d11",
+            "name": "usuario",
+            "containerId": "",
+            "created": "2023-04-09T04:59:25.361Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "be193d89-af7a-476f-84e6-4d7658d588af",
+            "name": "liga",
+            "containerId": "",
+            "created": "2023-04-09T04:59:31.086Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "3a859102-81b5-4a9f-b778-44fe77355623",
+            "name": "equipo",
+            "containerId": "",
+            "created": "2023-04-09T04:59:56.137Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "584a4531-217f-478b-ac5a-b7bcc08a1c78",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "5acb6fb3-a328-467d-b139-382595a6b3bc",
+            "name": "loginAdmin",
+            "url": "localhost:8080/api/auth/login",
+            "method": "POST",
+            "sortNum": 2500,
+            "created": "2023-04-09T04:58:21.366Z",
+            "modified": "2023-04-09T21:38:45.402Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"ADMIN\",\n  \"correo\":\"admin@gmail.com\",\n  \"password\":\"deportes123\",\n  \"rol\": \"ADMIN\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cde6875e-e840-44a2-873c-27f1c3e589f2",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "5acb6fb3-a328-467d-b139-382595a6b3bc",
+            "name": "loginUser",
+            "url": "localhost:8080/api/auth/login",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-04-09T04:58:42.803Z",
+            "modified": "2023-04-09T21:38:23.716Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "45926c24-7a5a-409e-88c0-fe7250bfba83",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "1a5c073b-7df2-4ddf-868d-f6597f727d11",
+            "name": "post admin",
+            "url": "localhost:8080/api/usuarios/agregar",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-09T21:15:58.839Z",
+            "modified": "2023-04-09T21:36:23.051Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"ADMIN\",\n  \"correo\":\"admin@gmail.com\",\n  \"password\":\"deportes123\",\n  \"rol\": \"ADMIN\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b1edac7c-510c-4aff-a5fa-5748b41c9879",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "be193d89-af7a-476f-84e6-4d7658d588af",
+            "name": "post liga",
+            "url": "localhost:8080/api/ligas/agregar",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-04-09T21:42:47.375Z",
+            "modified": "2023-04-09T21:56:36.026Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDMzMmZmMWY0YTVkOWYwYjk4OWVhNzgiLCJpYXQiOjE2ODEwNzYzMjUsImV4cCI6MTY4MTA5MDcyNX0.RcG74T5GD05tvr17yunTmjIymgNa95KhC0FbTe1m5Lc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"juvenil\",\n  \"jornada\":\"matutina\"\n \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb4b3fac-c64e-4ea4-aed1-1d0e1fa43483",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "be193d89-af7a-476f-84e6-4d7658d588af",
+            "name": "get liga",
+            "url": "localhost:8080/api/ligas/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-04-09T21:43:13.305Z",
+            "modified": "2023-04-09T22:09:32.867Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "79434956-3e5e-4c00-ae73-40fc40d928ea",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "be193d89-af7a-476f-84e6-4d7658d588af",
+            "name": "put liga",
+            "url": "localhost:8080/api/ligas/editar/6433349ea1d6cc1b02814a2e",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-04-09T21:43:20.480Z",
+            "modified": "2023-04-09T22:21:13.869Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDMzMmZmMWY0YTVkOWYwYjk4OWVhNzgiLCJpYXQiOjE2ODEwNzYzMjUsImV4cCI6MTY4MTA5MDcyNX0.RcG74T5GD05tvr17yunTmjIymgNa95KhC0FbTe1m5Lc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"futbol\",\n  \"jornada\":\"vespertina\"\n \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8c387ca-6faa-4616-8704-95b9659ab191",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "be193d89-af7a-476f-84e6-4d7658d588af",
+            "name": "delete liga",
+            "url": "localhost:8080/api/ligas/eliminar/6433349ea1d6cc1b02814a2e",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-04-09T21:43:30.563Z",
+            "modified": "2023-04-09T22:21:27.612Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDMzMmZmMWY0YTVkOWYwYjk4OWVhNzgiLCJpYXQiOjE2ODEwNzYzMjUsImV4cCI6MTY4MTA5MDcyNX0.RcG74T5GD05tvr17yunTmjIymgNa95KhC0FbTe1m5Lc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "259be80d-d5d0-4fe2-ba76-cfb6ddceb465",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "3a859102-81b5-4a9f-b778-44fe77355623",
+            "name": "post equipo",
+            "url": "localhost:8080/api/equipos/agregar",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-04-09T21:43:50.698Z",
+            "modified": "2023-04-09T22:28:43.666Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDMzMmZmMWY0YTVkOWYwYjk4OWVhNzgiLCJpYXQiOjE2ODEwNzYzMjUsImV4cCI6MTY4MTA5MDcyNX0.RcG74T5GD05tvr17yunTmjIymgNa95KhC0FbTe1m5Lc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"team 1\",\n  \"liga\": \"64333ae3887f641ab255cc05\",\n  \"integrantes\":6,\n    \"goles_favor\":8,\n    \"goles_contra\": 9,\n    \"diferencia_goles\": 6,\n    \"partidos\": 5\n\n \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b9a08a9-67d6-4fc0-a6f8-c5a9f485db20",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "3a859102-81b5-4a9f-b778-44fe77355623",
+            "name": "get equipo",
+            "url": "localhost:8080/api/equipos/",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2023-04-09T21:44:02.993Z",
+            "modified": "2023-04-09T22:13:19.332Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e16cd114-5499-40a5-8368-cfc17a6ba15f",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "3a859102-81b5-4a9f-b778-44fe77355623",
+            "name": "put equipo",
+            "url": "localhost:8080/api/equipos/editar/6645654",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-04-09T21:44:10.225Z",
+            "modified": "2023-04-09T22:24:33.352Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDMzMmZmMWY0YTVkOWYwYjk4OWVhNzgiLCJpYXQiOjE2ODEwNzYzMjUsImV4cCI6MTY4MTA5MDcyNX0.RcG74T5GD05tvr17yunTmjIymgNa95KhC0FbTe1m5Lc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"team 1\",\n  \"liga\": \"64333ae3887f641ab255cc05\"\n \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d47db837-93db-4c45-a4fa-a6c664b22246",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "1a5c073b-7df2-4ddf-868d-f6597f727d11",
+            "name": "post user",
+            "url": "localhost:8080/api/usuarios/agregar",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-04-09T21:50:39.392Z",
+            "modified": "2023-04-09T21:53:35.354Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0f89c7d3-3681-4e83-9911-5f6ec7b5bcba",
+            "colId": "ae2ad3db-9d75-46bf-8e71-d6870b119b86",
+            "containerId": "3a859102-81b5-4a9f-b778-44fe77355623",
+            "name": "delete equipo",
+            "url": "localhost:8080/api/equipos/eliminar/6645654",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-04-09T22:11:53.019Z",
+            "modified": "2023-04-09T22:24:38.235Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDMzMmZmMWY0YTVkOWYwYjk4OWVhNzgiLCJpYXQiOjE2ODEwNzYzMjUsImV4cCI6MTY4MTA5MDcyNX0.RcG74T5GD05tvr17yunTmjIymgNa95KhC0FbTe1m5Lc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"team 1\",\n  \"liga\": \"64333ae3887f641ab255cc05\"\n \n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
